@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faster UI</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reseter.css/1.0.8/reseter.min.css" integrity="sha512-w7sMEM5yzmuVP9ic9zpCLk/+whwrrhkH5g83x0wi5DEPo1y+/JniMmCVfbtjw5JipFpcCb4gyF2xLES6tc+TxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/main.css">
+</head>
+
+<style>
+  body {
+    background-color: #F5F8FF;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 120px;
+    padding-right: 120px;
+    margin-top: 16px;
+  }
+
+  .logo {
+    width: 170px;
+  }
+
+  .enlace {
+    font-size: 16px;
+    padding: 16px;
+    color: #8987A1;
+  }
+
+  .activo {
+    color: black;
+    font-weight: bold;
+  }
+
+  .navbar-centro {
+    background-color: #FFFFFF;
+    /* background-color: rgb(255, 255, 255);
+    background-color: white; */
+    
+    /* padding: 22px; */
+
+    /* padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 56px;
+    padding-right: 56px; */
+
+    padding: 22px 56px;
+
+    border-radius: 20px;
+  }
+
+  .inicio-sesion {
+    color: #8987A1;
+    padding: 16px;
+    /* margin: 16px; */
+  }
+
+  .boton {
+    background-color: #4E47FF;
+    color: white;
+    padding: 11.5px 37.91px;
+    border-radius: 10px;
+  }
+
+  .titulo-principal {
+    font-size: 73.34px;
+    text-align: center;
+    margin-top: 104px;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container-contact {
+    text-align: center;
+  }
+  
+  .contact {
+    border-radius: 10px;
+    padding: 18px 58px;
+    background-color: #252432;
+    color: white;
+    margin-top: 36px;
+    display: inline-block;
+  }
+</style>
+
+<body>
+  <nav class="navbar">
+    <div>
+      <img class="logo" src="./assets/logo.png" alt="Logo Faster UI">
+    </div>
+
+    <div class="navbar-centro">
+      <a class="enlace activo" href="./index.html">Home</a>
+      <a class="enlace" href="./about.html">About</a>
+      <a class="enlace" href="./works.html">How it works</a>
+      <a class="enlace" href="./services.html">Services</a>
+    </div>
+
+    <div>
+      <a class="inicio-sesion" href="./signin">Sign In</a>
+      <a class="boton" href="./signup">Sign Up</a>
+    </div>
+  </nav>
+
+  <div>
+    <h1 class="titulo-principal">Awesome UI Dark Template for Webflow Agency</h1>
+    <div class="container-contact">
+      <a class="contact" href="./contact.html">Get in Touch</a>
+    </div>
+  </div>
+
+
+</body>
+</html>
