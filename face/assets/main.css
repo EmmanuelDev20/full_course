@@ -1,0 +1,37 @@
+/* .facebook {
+  width: 50px;
+  height: 50px;
+  background: url(./images/several_icons.png) 0 -66px;
+} */
+*, html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #252728;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: #B1B3B9;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.center-icons-container {
+  display: flex;
+  gap: 20px;
+}
+
+.right-icons-container {
+  display: flex;
+  gap: 20px;
+}

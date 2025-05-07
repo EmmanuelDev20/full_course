@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Display Property Examples</title>
+  <style>
+    .container {
+      margin: 20px 0;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    .grid-container {
+      display: grid;
+      /* columnas: 1fr; */
+      /* grid-template-columns: 1fr 1.7fr 1fr; */
+      /* grid-template-columns: repeat(3, 1fr); */
+      grid-template-columns: 1fr 685px 1fr;
+      gap: 10px;
+    }
+
+    .flex-container {
+      /* display: flex;
+      flex-wrap: wrap; */
+      display: grid;
+      grid-template-columns: repeat(25, 1fr);
+      gap: 10px;
+    }
+
+    .block {
+      display: block;
+      width: 100%;
+      background-color: lightblue;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .inline {
+      display: inline;
+      background-color: lightgreen;
+      padding: 5px;
+    }
+
+    .inline-block {
+      display: inline-block;
+      background-color: lightcoral;
+      padding: 10px;
+      margin: 5px;
+    }
+
+    .box {
+      background-color: lightgray;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .enlace {
+      display: inline-block;
+      padding: 10px;
+      margin: 100px;
+      background-color: aquamarine;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Display Property Examples</h1>
+
+  <div class="container">
+    <h2>Grid</h2>
+    <p>Items are arranged in a grid layout:</p>
+
+    <div class="grid-container">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <!-- <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div> -->
+    </div>
+
+
+  </div>
+
+  <div class="container">
+    <h2>Flex</h2>
+    <p>Items are arranged in a flexible row:</p>
+    <div class="flex-container">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Block</h2>
+    <p>Block elements take up the full width:</p>
+    <div class="block">Block Element 1</div>
+    <div class="block">Block Element 2</div>
+    <a href="#" class="enlace">Inicio</a>
+    <a href="#" class="enlace">Inicio</a>
+    <a href="#" class="enlace">Inicio</a>
+    <a href="#" class="enlace">Inicio</a>
+  </div>
+
+  <div class="container">
+    <h2>Inline</h2>
+    <p>Inline elements only take up as much width as needed:</p>
+    <span class="inline">Inline Element 1</span>
+    <span class="inline">Inline Element 2</span>
+  </div>
+
+  <div class="container">
+    <h2>Inline-Block</h2>
+    <p>Inline-block elements behave like inline elements but allow setting width and height:</p>
+    <div class="inline-block">Inline-Block 1</div>
+    <div class="inline-block">Inline-Block 2</div>
+  </div>
+</body>
+</html>
