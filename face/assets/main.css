@@ -13,6 +13,7 @@
   display: flex;
   justify-content: space-between;
   background-color: #252728;
+  height: 50px;
 }
 
 button {
@@ -28,10 +29,74 @@ button {
 
 .center-icons-container {
   display: flex;
-  gap: 20px;
+  /* gap: 70px; */
 }
 
 .right-icons-container {
   display: flex;
   gap: 20px;
 }
+
+input {
+  border-radius: 20px;
+  /* padding-top: 8px;
+  padding-right: 20px;
+  padding-bottom: 8px;
+  padding-left: 20px; */
+  /* padding: 20px; */
+  /*     t y b|l y r */
+  padding: 8px 20px;
+  /* padding: 5px 7px 9px 12px; */
+  border: none;
+  background-color: #333334;
+  color: white;
+}
+/* border redondeado
+color
+estilo letra */
+
+.center-icons-container button {
+  padding: 0px 50px;
+}
+
+.active {
+  color: #0766FF;
+  border-bottom: 3px solid #0766FF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+.active {
+  color: #0766FF;
+  border-bottom: 3px solid #0766FF;
+} */
