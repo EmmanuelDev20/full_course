@@ -5,6 +5,14 @@
     box-sizing: border-box;
   }
 
+  body {
+    background-color: #1C1C1D;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
 .logo_container {
     display: flex;
     align-items: center;
@@ -19,7 +27,7 @@
 
 .center_icons_container {
     display: flex;
-    gap: 70px;  
+    /* gap: 70px; */
 }
 
 .center_icons_container button {
@@ -33,7 +41,9 @@
 
 .right_icons_container {
     display: flex;
+    align-items: center;
     gap: 20px;
+    position: relative;
 }
 
 input {
@@ -49,3 +59,49 @@ button {
     border: none;
     color: #b1b3b9;
 }
+
+.right_icons_container button {
+    background-color: #3B3D3E;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right_icons_container img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.right_icons_container div {
+    position: absolute;
+    width: 10px;
+    bottom: 7px;
+    right: 1px;
+    height: 10px;
+    background-color: #3B3D3E;
+    border-radius: 50%;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 2px solid #252728;
+}
+
+.big_container {
+    display: grid;
+    grid-template-columns: 1fr 680px 1fr;
+}
+
+.big_container img button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.big_container le
