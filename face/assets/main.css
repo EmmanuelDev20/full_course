@@ -9,6 +9,14 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #1C1C1D;
+}
+
+img {
+  max-width: 100%;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -34,7 +42,9 @@ button {
 
 .right-icons-container {
   display: flex;
+  align-items: center;
   gap: 20px;
+  position: relative;
 }
 
 input {
@@ -64,39 +74,85 @@ estilo letra */
   border-bottom: 3px solid #0766FF;
 }
 
+.right-icons-container button {
+  background-color: #3B3D3E;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  /* border-radius: 30px 10px 25px 100px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.right-icons-container img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 
+.right-icons-container div {
+  position: absolute;
+  width: 10px;
+  bottom: 7px;
+  right: 1px;
+  height: 10px;
+  background-color: #3B3D3E;
+  border-radius: 50%;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 2px solid #252728;
+}
 
+/* .big-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
 
+.big-container .left {
+  grid-column: 1 / 4;
+  height: 300px;
+  background-color: antiquewhite;
+}
 
+.big-container .main {
+  grid-column: 4 / 10;
+  height: 300px;
+  background-color: antiquewhite;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-
-.active {
-  color: #0766FF;
-  border-bottom: 3px solid #0766FF;
+.big-container .right {
+  grid-column: 10 / 13;
+  height: 300px;
+  background-color: antiquewhite;
 } */
+
+.big-container {
+  display: grid;
+  grid-template-columns: 1fr 680px 1fr;
+  /* grid-template-columns: 10% 40% 50%; */
+  /* grid-template-columns: .5fr 1.4fr 1fr; */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* grid-template-columns: repeat(12, 1fr); */
+}
+
+/* Big container */
+.big-container .left {
+  padding: 15px;
+}
+
+.big-container .left button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+.big-container .left .foto-perfil {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
