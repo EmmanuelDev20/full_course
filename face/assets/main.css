@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 body {
@@ -145,6 +146,7 @@ estilo letra */
 }
 
 .big-container .left button {
+  height: 50px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -155,4 +157,48 @@ estilo letra */
   width: 30px;
   height: 30px;
   border-radius: 50%;
+}
+
+.big-container .left .sprite {
+  position: relative;
+  left: -22px;
+  width: 74px;
+  height: 74px;
+  transform: scale(0.5);
+}
+
+.big-container .left .friends {
+  background: url(./images/left_icons.png) 0 -592px;
+}
+
+.big-container .left .remember {
+  background: url(./images/left_icons.png) 0 -888px;
+}
+
+.big-container .left .text {
+  position: relative;
+  left: -44px;  
+}
+
+.big-container .left .saved {
+  background: url(./images/left_icons.png) 0 -370px;
+}
+.big-container .left .teams {
+  background: url(./images/left_icons.png) 0 -74px;
+}
+.big-container .left .video {
+  background: url(./images/left_icons.png) 0 74px;
+}
+.big-container .left .marketplace {
+  background: url(./images/left_icons.png) 0 -814px;
+}
+.big-container .left .feeds {
+  background: url(./images/feeds.png);
+}
+
+.big-container .left .links a,
+.big-container .left .links span {
+  color: #ACAFB4;
+  text-decoration: none;
+  font-size: 12px;
 }
