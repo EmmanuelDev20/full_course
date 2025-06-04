@@ -57,7 +57,7 @@
             ></path>
           </svg>
         </button>
-        <button>
+        <button id="videos">
           <svg
             viewBox="0 0 24 24"
             width="24"
@@ -74,7 +74,7 @@
             ></path>
           </svg>
         </button>
-        <button>
+        <button id="store">
           <svg
             viewBox="0 0 24 24"
             width="24"
@@ -88,7 +88,7 @@
             ></path>
           </svg>
         </button>
-        <button>
+        <button id="friends">
           <svg
             viewBox="0 0 24 24"
             width="24"
@@ -198,7 +198,7 @@
     <!-- Contenedor grande -->
     <div class="big-container">
 
-      <div class="left">
+      <aside class="left">
         <button>
           <img class="foto-perfil" src="./assets/images/foto.jpg" alt="Foto de perfil">
           <span>Emmanuel Ovares Lobo</span>
@@ -254,45 +254,46 @@
             <span>·</span>
           <a href="#">Meta © 2025</a>
         </div>
-      </div>
+      </aside>
 
+      <main class="main">
 
-     
+        <div class="estado-container">
+          <div class="perfil-container">
+            <img src="./assets/images/foto.jpg" alt="Foto de perfil" class="foto-perfil">
+    
+            <input type="text" id="thinking" class="thinking" placeholder="¿Qué estás pensando, Emmanuel?" readonly>
+          </div>
 
+          <div class="links-container dnone">
+            <button>
+              <img class="iconos" src="./assets/images/upload_video.png" alt="Ícono de subir video">
+              <span class="text">Vídeo en directo</span>
+            </button>
 
+            <button>
+              <img class="iconos" src="./assets/images/upload_image.png" alt="Ícono de subir video">
+              <span class="text">Foto/vídeo</span>
+            </button>
 
+            <button>
+              <img class="iconos" src="./assets/images/reaction.png" alt="Ícono de subir video">
+              <span class="text">Sentimiento/actividad</span>
+            </button>
+          </div>
+        </div>
 
+      </main>
 
-
-      <div class="main">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis
-        deserunt atque provident hic? Doloremque dolorem in deserunt id
-        provident totam tempore perspiciatis maiores qui molestias unde, soluta
-        quidem suscipit consectetur saepe odio adipisci sunt consequuntur!
-        Officia velit fugit porro incidunt ab asperiores, harum reprehenderit
-        quisquam mollitia, quam ipsa neque dolorem.
-      </div>
-
-
+      <aside class="right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quasi corporis nulla unde provident inventore nihil dolorem minus nisi itaque ratione vel consequuntur, sed veniam, autem eos ipsum tempora maiores.</aside>
 
       
     </div>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", (event) => {
-        const home = document.getElementById("home");
-        const games = document.getElementById("games");
+    <div class="modal" id="modal">
+      <div class="modal-content"></div>
+    </div>
 
-        home.addEventListener("click", function () {
-          home.classList.add("active");
-          games.classList.remove("active");
-        });
-
-        games.addEventListener("click", function () {
-          games.classList.add("active");
-          home.classList.remove("active");
-        });
-      });
-    </script>
+    <script src="./assets/main.js"></script>
   </body>
 </html>
