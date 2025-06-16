@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <img src="" alt="" id="image">
+
+  <p id="valorDolar">Hola compañeros</p>
+
+  <input type="number" id="montoEvaluar">
+
+  <h1>El precio en colones es:</h1>
+  <p id="precioEnDolares"></p>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // const objeto = {
+      //   personaje: {
+      //     nombre: "Julian",
+      //     edad: 55,
+      //     pais: "CR"
+      //   },
+      //   restaurante: {
+      //     nombreRestaurant: "Nuevo mundo",
+      //     ubicacion: "Neilly"
+      //   }
+      // }
+      // console.log(objeto.personaje.nombre, objeto.personaje.edad)
+      // console.log(objeto.restaurante.nombreRestaurant)
+
+      // Función para obtener imagen de perros
+      // const image = document.getElementById('image')
+
+      // async function obtenerPerro() {
+      //   const res = await fetch('https://dog.ceo/api/breeds/image/random');
+      //   const data = await res.json();
+
+      //   image.src = data.message;
+      // }
+
+      // obtenerPerro()
+
+      // let precioDolar
+      // Función para obtener el valor del dólar
+      async function obtenerValorDolar () {
+        const valorDolar = document.getElementById("valorDolar")
+
+        const respuesta = await fetch('https://api.hacienda.go.cr/indicadores/tc')
+        const data = await respuesta.json()
+
+        // valorDolar.innerHTML = "El valor del dólar al día de: " + data.dolar.compra.fecha + " es de: " + data.dolar.compra.valor
+        valorDolar.innerHTML = `El valor del dólar al día de: ${ data.dolar.compra.fecha } es de: ${ data.dolar.compra.valor }`
+
+        // precioDolar = data.dolar.compra.valor
+
+        // console.log(valorDolar.innerText)
+        // console.log(data.dolar.compra.valor)
+        return data.dolar.compra.valor
+      }
+
+      async function consultarValorEnDolares () {
+        const precioEnDolares = document.getElementById("precioEnDolares")
+        const montoEvaluar = document.getElementById("montoEvaluar")
+
+        precioDolar = await obtenerValorDolar()
+
+        montoEvaluar.addEventListener("keyup", function(e) {
+          let tempValor = e.target.value * precioDolar
+          precioEnDolares.innerText = tempValor
+        })
+        
+      }
+
+      consultarValorEnDolares()
+
+    })
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const image = document.getElementById("image");
+
+      async function fetchData() {
+        const res = await fetch('https://dog.ceo/api/breeds/image/random');
+        const data = await res.json();
+        console.log(data);
+        image.src = data.message
+      }
+      
+      fetchData()
+    })
+  </script> -->
+</body>
+</html>
