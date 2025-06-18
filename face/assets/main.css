@@ -1,13 +1,16 @@
-/* .facebook {
-  width: 50px;
-  height: 50px;
-  background: url(./images/several_icons.png) 0 -66px;
-} */
+:root {
+  --custom-gray: #b3b9b1;
+}
+
 *, html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
@@ -23,12 +26,15 @@ img {
   justify-content: space-between;
   background-color: #252728;
   height: 50px;
+  /* padding: 0 10px; */
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 button {
   background-color: transparent;
   border: none;
-  color: #B1B3B9;
+  color: var(--custom-gray);
   cursor: pointer;
 }
 
@@ -134,8 +140,9 @@ estilo letra */
 
 .big-container {
   display: grid;
-  gap: 62px;
-  grid-template-columns: 1fr 680px 1fr;
+  gap: 45px;
+  grid-template-columns: 1fr 580px 1fr;
+  /* grid-template-columns: 1fr 680px 1fr; */
   /* grid-template-columns: 10% 40% 50%; */
   /* grid-template-columns: .5fr 1.4fr 1fr; */
   /* grid-template-columns: 1fr 1fr 1fr; */
@@ -277,4 +284,132 @@ estilo letra */
 
 .dflex {
   display: flex !important;
+}
+
+.title-h3 {
+  color: var(--custom-gray);
+  font-weight: normal;
+  font-size: 14px;
+  padding: 16px 0;
+}
+
+.right {
+  margin-top: 16px;
+  padding-right: 16px;
+}
+
+.publi-text {
+  color: white;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.publi-text-2 {
+  color: var(--custom-gray);
+  font-size: 10px;
+}
+
+.publi {
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+/* .publi-img {
+  width: 60px;
+} */
+
+.right section {
+  border-bottom: .5px solid #66686C;
+}
+
+.flex-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-link {
+  font-size: 14px;
+  color: #5AA7FF;
+}
+
+.friends {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.friends .main_image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.friends-name {
+  color: white;
+  font-size: 12px;
+  margin-bottom: 7px;
+}
+
+.friends-name-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.friends-name-container span {
+  color: #B1B3B9;
+  font-size: 10px;
+}
+
+.friends-images {
+  display: flex;
+  margin-bottom: 7px;
+}
+
+.friends-images-container {
+  display: flex;
+}
+
+.friends-images-container img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.friends-first {
+  outline: 2px solid #1C1C1D;
+  z-index: 1;
+}
+
+.friends-second {
+  margin-left: -6px;
+}
+
+.friends-common {
+  font-size: 14px;
+  color: var(--custom-gray);
+}
+
+.friends-btns {
+  display: flex;
+  gap: 8px;
+}
+
+.friends-btns button {
+  font-weight: bold;
+  padding: 8px 15px;
+  height: auto;
+  border-radius: 7px;
+}
+
+.friends-btns .confirm {
+  background-color: #0766FF;
+}
+
+.friends-btns .delete {
+  background-color: #333334;
 }
