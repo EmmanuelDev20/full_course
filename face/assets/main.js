@@ -88,9 +88,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 
   const modal = document.getElementById("modal");
-  modal.addEventListener("click", function() {
-    modal.classList.add("dnone")
-    modal.classList.remove("dflex")
+  modal.addEventListener("click", function(eventoNuevo) {
+    if (eventoNuevo.target === modal) {
+      modal.classList.add("dnone")
+      modal.classList.remove("dflex")
+    }
   })
 
   const thinking = document.getElementById("thinking");
